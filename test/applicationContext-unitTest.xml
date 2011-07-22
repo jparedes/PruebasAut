@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- USUARIO -->	
+	<bean name="usuarioMockDao" class="unit.mock.dao.UsuarioMockDao" />
+
+	<bean name="usuarioService" class="service.UsuarioServiceImpl" >
+		<property name="dao" ref="usuarioMockDao" />
+	</bean>
+
+</beans>

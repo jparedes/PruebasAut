@@ -8,6 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.apache.commons.lang.xwork.builder.EqualsBuilder;
+
 
 @Entity
 @Table(name="Usuario")
@@ -33,13 +35,25 @@ public class Usuario {
 	public Usuario(){
 	}
 	
-	public Usuario(String login, String password, String email,
-			Date fechaRegistro) {
+	public Usuario(String login, String password, String email) {
 		super();
 		this.login = login;
 		this.password = password;
 		this.email = email;
-		this.fechaRegistro = fechaRegistro;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Usuario) {
+			EqualsBuilder builder = new EqualsBuilder();
+			final Usuario ref = (Usuario)obj;
+			builder.append(id, ref.id);
+			builder.append(login, ref.login);
+			builder.append(password, ref.password);
+			builder.append(email, ref.email);
+			return builder.isEquals();
+		}
+		return false;
 	}
 	
 	public Long getId() {
