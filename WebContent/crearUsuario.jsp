@@ -12,7 +12,7 @@
 			<s:textfield name="login" label="Login" />
 			<s:password name="password" label="Password" />
 			<s:textfield name="email" label="Email" />
-			<s:submit />
+			<s:submit name="submit" />
 		</s:form>
 	</td></tr></table>
 	</div>

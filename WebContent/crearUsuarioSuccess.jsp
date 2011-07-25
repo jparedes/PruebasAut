@@ -9,7 +9,7 @@
 <body>
 
 	<div align="center">
-		<h4>Usuario creado con exito</h4>
+		<h4>Usuario creado con éxito</h4>
 		<a href="listarUsuario.action">Volver al listado</a>
 	</div>
 
