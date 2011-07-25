@@ -1,4 +1,16 @@
 build/
 test-output/
 *.DS_Store
-*.zip
+
+
+#Generado por Fitnesse:
+/fitnesse/*.zip
+/fitnesse/*/*.zip
+/fitnesse/*/*/*.zip
+/fitnesse/*/*/*/*.zip
+/fitnesse/*/*/*/*/*.zip
+/fitnesse/*/*/*/*/*/*.zip
+/fitnesse/FitNesseRoot/files/testResults/
+/fitnesse/FitNesseRoot/ErrorLogs/
+/fitnesse/FitNesseRoot/RecentChanges/
+/fitnesse/FitNesseRoot/FitNesse/

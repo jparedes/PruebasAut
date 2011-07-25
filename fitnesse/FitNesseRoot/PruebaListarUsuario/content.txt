@@ -1,0 +1,17 @@
+|import                             |
+|acceptance.fitnesse.service.usuario|
+
+En la base de datos embebida de la aplicación existen 5 registros.
+La prueba utiliza las implementaciones concretas (no usa objetos mock) y se deberían obtener los cinco registros.
+
+Nota:
+Los campos llenos de la tabla se convierten en assert equals. Los vacíos se ignoran.
+
+
+|Query:listar usuario                        |
+|id|login      |password |email|fechaRegistro|
+|1 |mkeenan    |s1ng3r   |     |             |
+|2 |ajones     |gu1t9r1st|     |             |
+|3 |dcarey     |drumm3r  |     |             |
+|4 |jchancellor|b9ss1st  |     |             |
+|5 |pdamour    |b9ss1st  |     |             |

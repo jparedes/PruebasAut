@@ -1,0 +1,10 @@
+!1 Pruebas de aceptación para el servicio de usuarios
+
+Cada una de las siguientes páginas representa una prueba. Se utiliza SLIM como sistema de pruebas. La configuración de las referencias 
+para el classpath está en la página [[root][root]].
+
+-> PruebaListarUsuario
+-> PruebaAlgoritmoPassword
+
+
+No todas las páginas del Wiki son pruebas. Esta es un ejemplo de eso.

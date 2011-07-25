@@ -1,0 +1,8 @@
+!1 Welcome to Fitnesse!
+!3 ''The fully integrated stand-alone acceptance testing framework and wiki.''
+
+!3 Ejemplos de pruebas de aceptación
+-> PruebasAceptacionServicioUsuario
+
+
+!note Release v20110104
