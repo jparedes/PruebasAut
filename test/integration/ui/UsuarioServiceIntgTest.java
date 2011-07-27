@@ -42,7 +42,7 @@ public class UsuarioServiceIntgTest {
 		
 		driver.findElement(By.name("submit")).click();
 		
-		Assert.assertTrue(driver.getPageSource().contains("Usuario creado con Ã©xito"));
+		Assert.assertTrue(driver.getPageSource().contains("Usuario creado con Žxito"));
 	}
 	
 	@Test

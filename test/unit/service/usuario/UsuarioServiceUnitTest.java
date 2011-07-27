@@ -1,4 +1,4 @@
-package unit.servicetest;
+package unit.service.usuario;
 
 import model.Usuario;
 
@@ -9,10 +9,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import service.UsuarioService;
-import testdata.UsuarioServiceTestData;
 import unit.mock.dao.UsuarioMockDao;
+import unit.testdata.UsuarioServiceTestData;
 
-@ContextConfiguration(locations="classpath:applicationContext-unitTest.xml")
+@ContextConfiguration(locations="classpath:/unit/service/usuario/applicationContext-unitTest.xml")
 public class UsuarioServiceUnitTest extends AbstractTestNGSpringContextTests {
 	
 	@Autowired
